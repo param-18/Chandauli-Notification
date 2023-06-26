@@ -34,7 +34,7 @@ def send_email(sub,msg):
         print('Email sent successfully!')
 
 # Set up the Selenium ChromeDriver for local
-service = Service("./chromedriver.exe")  # Replace with the path to your chromedriver executable
+service = Service('chrome-driver-path')  # Replace with the path to your chromedriver executable
 options = Options()
 options.add_argument('--headless')  # Optional: Run the browser in headless mode
 driver = webdriver.Chrome(service=service, options=options)
