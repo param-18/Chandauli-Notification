@@ -1,0 +1,15 @@
+{
+  "builds" : [
+
+    {
+      "src" : "chandaulinotification/main.py",
+      "use" : "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src" : "/(.*)",
+      "dest" : "chandaulinotification/main.py"
+    }
+  ]
+}
